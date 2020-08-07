@@ -1,0 +1,14 @@
+.hero-bg {
+  background-image: url(../img/yourpath.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80vw;
+
+  .hero-inner {
+    min-height: 90vh;
+    width: 70%;
+    margin: 0rem auto;
+    padding: 13rem 0rem;
+    @include flex(flex-start, space-around, column);
+  }
+}

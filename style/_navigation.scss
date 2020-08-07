@@ -15,9 +15,10 @@
     width: 100%;
     min-height: 7vh;
     margin-left: 10vw;
-    #logo {
-      width: 16rem;
-    }
+  }
+  #logo {
+    width: 16rem;
+    margin-left: 10vw;
   }
   .nav-bar-right {
     flex: 1 1 40rem;
@@ -26,7 +27,9 @@
     position: relative;
     .links {
       @include flex(center, space-evenly);
+      width: 60%;
       min-height: 7vh;
+      float: right;
       .link-red {
         height: 7vh;
         width: 8rem;
