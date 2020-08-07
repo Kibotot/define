@@ -1,0 +1,56 @@
+.navigation-bar {
+  @include flex(center, space-around);
+  min-height: 7vh;
+  font-size: $navfont;
+  font-weight: 600;
+  flex-wrap: wrap;
+  background: whitesmoke;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  transition: all 0.5s;
+  top: 0;
+  .nav-bar.left {
+    flex: 1 1 60rem;
+    width: 100%;
+    min-height: 7vh;
+    margin-left: 10vw;
+    #logo {
+      width: 16rem;
+    }
+  }
+  .nav-bar-right {
+    flex: 1 1 40rem;
+    width: 50%;
+    min-height: 7vh;
+    position: relative;
+    .links {
+      @include flex(center, space-evenly);
+      min-height: 7vh;
+      .link-red {
+        height: 7vh;
+        width: 8rem;
+        top: 0;
+        right: 0;
+        transition: ease-in-out 0.3s all;
+        position: absolute;
+        background-color: #ec2727;
+        @include flex(center, center, column);
+        .stripe {
+          height: 0.3rem;
+          width: 4rem;
+          margin: 0.3rem auto;
+          background: white;
+          align-self: center;
+          justify-content: center;
+        }
+        .stripe-top {
+          margin-top: auto;
+        }
+        .stripe-bot {
+          margin-bottom: auto;
+        }
+      }
+    }
+  }
+}

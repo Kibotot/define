@@ -1,0 +1,12 @@
+$navfont: 2rem;
+
+@mixin flex($align, $justify, $direction: row) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+
+@import "global";
+@import "navigation";
+@import "main";
