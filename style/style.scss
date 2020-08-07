@@ -1,4 +1,8 @@
 $navfont: 2rem;
+$discoverbutton: 1.6rem;
+$herotitle: 6vw;
+$herodescription: 1.414vw;
+$red: #ec2727;
 
 @mixin flex($align, $justify, $direction: row) {
   display: flex;
