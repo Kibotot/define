@@ -396,4 +396,128 @@ a {
             transform: translateY(6px);
   }
 }
+
+.tours-title,
+.events-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  letter-spacing: 0.4rem;
+  -webkit-transform: translateY(10rem);
+          transform: translateY(10rem);
+  color: white;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  font-style: italic;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 4.2rem;
+}
+
+.tours-title span,
+.events-title span {
+  width: 40%;
+  height: 1rem;
+  margin: auto;
+}
+
+.tours-title span {
+  background: white;
+}
+
+.events-title {
+  color: #222121;
+}
+
+.events-title span {
+  background: #222121;
+}
+
+.tours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 60vh;
+  background: rgba(248, 0, 0, 0.5);
+}
+
+.tours .box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.tours .box-container .box {
+  color: white;
+  padding: 4rem;
+}
+
+.tours .box-container .box .container {
+  overflow: hidden;
+}
+
+.tours .box-container .box .container img {
+  height: 24vh;
+  width: 24vw;
+}
+
+.tours .box-container .box .box-tourtitle {
+  margin: 1rem auto;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.tours .box-container .box .box-date {
+  margin-top: 1rem 0;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.container-hover-zoom img {
+  -webkit-transition: -webkit-transform 0.5s, -webkit-filter 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s, -webkit-filter 0.5s ease-in-out;
+  transition: transform 0.5s, filter 0.5s ease-in-out;
+  transition: transform 0.5s, filter 0.5s ease-in-out, -webkit-transform 0.5s, -webkit-filter 0.5s ease-in-out;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.container-hover-zoom:hover img {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transform: scale(1.075);
+          transform: scale(1.075);
+}
+
+/* BRANDS SECTION */
 /*# sourceMappingURL=style.css.map */

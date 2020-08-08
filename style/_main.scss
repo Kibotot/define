@@ -65,3 +65,75 @@
     transform: translateY(6px);
   }
 }
+
+// TOURS SECTION
+.tours-title,
+.events-title {
+  @include flex(center, center);
+  letter-spacing: 0.4rem;
+  transform: translateY(10rem);
+  color: white;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  font-style: italic;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: $sectiontitle;
+  span {
+    width: 40%;
+    height: 1rem;
+    margin: auto;
+  }
+}
+
+.tours-title span {
+  background: white;
+}
+
+.events-title {
+  color: #222121;
+  span {
+    background: #222121;
+  }
+}
+
+.tours {
+  @include flex(center, center);
+  min-height: 60vh;
+  background: rgba(248, 0, 0, 0.5);
+  .box-container {
+    @include flex(center, space-around);
+    .box {
+      color: white;
+      padding: 4rem;
+      .container {
+        overflow: hidden;
+        img {
+          height: 24vh;
+          width: 24vw;
+        }
+      }
+      .box-tourtitle {
+        margin: 1rem auto;
+        font-size: 2rem;
+        font-weight: 600;
+      }
+      .box-date {
+        margin-top: 1rem 0;
+        font-weight: 400;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+.container-hover-zoom img {
+  transition: transform 0.5s, filter 0.5s ease-in-out;
+  filter: grayscale(100%);
+}
+.container-hover-zoom:hover img {
+  filter: grayscale(0);
+  transform: scale(1.075);
+}
+
+/* BRANDS SECTION */
