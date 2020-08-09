@@ -13,13 +13,13 @@
 
     .hero-title {
       margin-bottom: 5rem;
-      font-size: $herotitle;
+      font-size: font(title);
       span {
-        color: $red;
+        color: color(primary);
       }
     }
     .hero-description {
-      font-size: $herodescription;
+      font-size: font(description);
       font-weight: 500;
       width: 90%;
       line-height: 4.8rem;
@@ -33,12 +33,12 @@
       color: white;
       border: none;
       font-weight: 600;
-      font-size: $discoverbutton;
+      font-size: font(button);
       letter-spacing: 0.1rem;
       transition: ease-in-out 0.3s all;
       cursor: pointer;
       &:hover {
-        background-color: $red;
+        background-color: color(primary);
       }
     }
   }
@@ -46,7 +46,7 @@
 
 .bottom-scroll {
   @include flex(center, center, column);
-  font-size: $discoverbutton;
+  font-size: font(button);
   font-weight: 400;
   transform: translateY(-2rem);
   h4 {
@@ -79,7 +79,7 @@
   font-style: italic;
   font-weight: 900;
   text-transform: uppercase;
-  font-size: $sectiontitle;
+  font-size: font(subtitle);
   span {
     width: 40%;
     height: 1rem;
@@ -116,7 +116,7 @@
       }
       .box-tourtitle {
         margin: 1rem auto;
-        font-size: 2rem;
+        font-size: font(navigation);
         font-weight: 600;
       }
       .box-date {
@@ -137,3 +137,16 @@
 }
 
 /* BRANDS SECTION */
+
+.brands {
+  background: white;
+  .brands-list {
+    @include flex(center, space-around);
+    min-height: 15vh;
+    margin: 0 10vw;
+    .list-item img {
+      width: 12vw;
+      height: 12vh;
+    }
+  }
+}

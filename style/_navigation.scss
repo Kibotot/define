@@ -1,7 +1,7 @@
 .navigation-bar {
   @include flex(center, space-around);
   min-height: 7vh;
-  font-size: $navfont;
+  font-size: font(navigation);
   font-weight: 600;
   flex-wrap: wrap;
   background: whitesmoke;
@@ -37,7 +37,7 @@
         right: 0;
         transition: ease-in-out 0.3s all;
         position: absolute;
-        background-color: #ec2727;
+        background-color: color(primary);
         @include flex(center, center, column);
         .stripe {
           height: 0.3rem;

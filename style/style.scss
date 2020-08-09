@@ -1,9 +1,23 @@
-$navfont: 2rem;
-$discoverbutton: 1.6rem;
-$herotitle: 6vw;
-$sectiontitle: 4.2rem;
-$herodescription: 1.414vw;
-$red: #ec2727;
+$color: (
+  primary: #ec2727,
+  accent: #222121,
+);
+
+$font: (
+  navigation: 2rem,
+  button: 1.6rem,
+  title: 6vw,
+  subtitle: 4.2rem,
+  description: 1.414vw,
+);
+
+@function color($color-name) {
+  @return map-get($color, $color-name);
+}
+
+@function font($font-size) {
+  @return map-get($map: $font, $key: $font-size);
+}
 
 @mixin flex($align, $justify, $direction: row) {
   display: flex;
